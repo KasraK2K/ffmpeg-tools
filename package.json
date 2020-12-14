@@ -1,0 +1,22 @@
+{
+  "name": "ffmpeg-snapshot",
+  "version": "1.0.0",
+  "description": "take snapshot from video file",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "ffmpeg", "fluent-ffmpeg", "thumb", "thumbnail", "convert", "snapshot"
+  ],
+  "repository": "KasraK2K/ffmpeg-snapshot",
+  "author": "Kasra Karami <Kasra.Karami.KK@gmail.com> (https://ias.co.ir/)",
+  "contributors": [
+    "Kaveh Karami <Kaveh.Karami.KK@gmail.com> (https://github.com/KavehKarami)"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
