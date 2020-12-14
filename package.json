@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-snapshot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "take snapshot from video file",
   "main": "index.js",
   "scripts": {
