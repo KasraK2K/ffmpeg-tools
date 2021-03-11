@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-tools",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Snapshot, Watermark and more ...",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "fluent-ffmpeg": "^2.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^14.14.33"
+  }
 }
