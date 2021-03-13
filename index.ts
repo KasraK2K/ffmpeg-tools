@@ -1,7 +1,6 @@
 import { path as ffmpegPath } from "@ffmpeg-installer/ffmpeg";
 import * as ffmpeg from "fluent-ffmpeg";
 ffmpeg.setFfmpegPath(ffmpegPath);
-import { join } from "path";
 
 /**
  * @param {*} videoPath : Input video file string path
@@ -37,15 +36,14 @@ export const snapshot = (
  */
 export const watermark = (
   video: string,
-  watermark: { dir: string; icon: string },
+  watermark: string,
   destination: string,
   overlay: string = "(W-w)-20:(H-h)-40"
 ) => {
-  const iconPath = join(watermark.dir, watermark.icon);
   return new ffmpeg({ source: video })
     .addOption(
       "-vf",
-      `movie=${iconPath} [watermark]; [in] [watermark] overlay=${overlay} [out]`
+      `movie=${watermark} [watermark]; [in] [watermark] overlay=${overlay} [out]`
     )
     .on("start", function (commandLine) {
       console.log(commandLine);
